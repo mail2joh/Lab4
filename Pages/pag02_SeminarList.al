@@ -1,4 +1,4 @@
-page 50102 "CSD Seminar List”
+page 50102 "CSD Seminar List"
 {
     PageType = List;
     ApplicationArea = All;
@@ -27,11 +27,12 @@ page 50102 "CSD Seminar List”
 
                 }
                 field("CSD Seminar Price"; "CSD Seminar Price")
-            }
+                {
 
+                }
             }
         }
-
+    }
     actions
     {
         area(Processing)
