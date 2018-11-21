@@ -47,7 +47,7 @@ table 50101 "CSD Seminar"
         {
             Caption = 'Search Name';
         }
-        field(70; "CSD Blocked"; Text[50])
+        field(70; "CSD Blocked"; Boolean)
         {
             Caption = 'Blocked';
         }

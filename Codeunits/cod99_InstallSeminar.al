@@ -4,7 +4,7 @@ codeunit 50199 InstallSeminar
 
     trigger OnInstallAppPerCompany();
     var
-        SetupExists: Boolean;
+        SeminarSetup: Record "CSD Seminar Setup";
     begin
         if SeminarSetup.get then
             exit;

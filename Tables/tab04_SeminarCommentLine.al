@@ -48,4 +48,16 @@ table 50104 "CSD Seminar Comment Line"
         }
     }
 
+    procedure SetupNewLine()
+    var
+        SeminarCommentLine: Record "CSD Seminar Comment Line";
+    begin
+        SeminarCommentLine.SetRange("CSD Table Name", "CSD Table Name");
+        SeminarCommentLine.SetRange("CSD No.", "CSD No.");
+        SeminarCommentLine.SetRange("CSD Document Line No.", "CSD Document Line No.");
+        SeminarCommentLine.SetRange("CSD Date", WorkDate);
+        if SeminarCommentLine.IsEmpty then
+            "CSD Date" := WorkDate;
+    end;
+
 }
